@@ -11,11 +11,9 @@ public class TestStatus {
     {
         for (Map.Entry<String,Boolean> data: testResult.entrySet()) {
             if (data.getValue() == false){
-                System.out.println("Test fail! :"+data.getValue());
+                System.out.println("Test fail! :"+data.getKey());
             } else if (data.getValue() == true) {
                 System.out.println("Test OK, no problem :"+data.getKey());
-            } else {
-                System.out.println("This test is empty :"+data.getKey());
             }
         }
     }
